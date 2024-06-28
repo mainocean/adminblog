@@ -1,0 +1,108 @@
+/*
+ * @author JoomDev https://www.joomdev.com/
+ * @copyright Copyright (C) 2008 - 2018 Joomdev.com. All rights reserved.
+ * @license http://www.gnu.org/licenses/gpl-2.0.html GPLv2 or later
+*/
+
+/**********
+	01. Testimonials
+	02. Person
+	03. Accordion
+	04. Testimonials
+**********/
+
+/*----- Testimonials -----*/
+.sppb-addon.sppb-addon-testimonial{
+	blockquote{
+	border:none;
+	margin:0 0 10px;
+	line-height:normal;
+		&:before{
+		  top:0px;
+		  font-size: 30px;
+		  content: "\f10d";
+		  position: relative;
+		  padding-right:5px;
+		  color:@major_color;
+		  display: inline-block;
+		  font-family: fontawesome;
+		}
+	}
+	.sppb-media-body p{
+		border: 1px solid;
+		display: inline-block;
+		margin: 20px 0;
+		padding: 20px 25px 10px;
+		position: relative;
+	}
+	.sppb-media-body p:before {
+		border-right: 1px solid;
+		border-top: 1px solid;
+		content: "";
+		display: inline-block;
+		height: 20px;
+		left: calc(58% - 10px);
+		position: absolute;
+		top: -11px;
+		transform: rotate(-45deg);
+		width: 20px;
+		background-color: #ffffff;
+		border-color: #dbe0f1 !important;
+	}
+	.sppb-media-body p {
+		background-color: #ffffff;
+		border-color: #dbe0f1;
+	}
+	.sppb-media-object a{
+		display: inline-block;
+		text-align: center;
+	}
+	footer{ color:inherit; }
+}
+
+/*----- Person -----*/
+.sppb-addon-content{
+	.sppb-person-image{
+		img{
+			width:100%;
+		}
+	}
+}
+
+.sppb-addon-person .sppb-person-social{
+	margin:0;
+}
+
+/*----- Accordion -----*/
+.sppb-panel-group{
+	.sppb-panel-heading{
+		text-transform:uppercase;
+	}
+	.sppb-panel{
+		border-width: 0 0 2px;
+	}
+	.sppb-panel-body{
+		padding:35px 30px;
+		span{
+			color:#757575;
+		}
+	}
+	.sppb-panel-heading{
+		padding:10px 30px;
+	}
+	.sppb-panel-title{
+		font-size: 14px;
+        font-weight: 600;
+        text-transform: none;
+	}
+	.sppb-panel{
+		margin-bottom:10px;
+	}
+	.sppb-addon-title{
+		text-transform:uppercase;
+	}
+}
+/*----- Responsive -----*/
+@media screen and (max-width:936px){
+    #carousel-pro .sppb-row {display:inline-block;}
+}
